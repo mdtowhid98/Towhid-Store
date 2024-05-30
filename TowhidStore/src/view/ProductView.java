@@ -534,6 +534,14 @@ public class ProductView extends javax.swing.JFrame {
         tblStock = new javax.swing.JTable();
         report = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -545,11 +553,11 @@ public class ProductView extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(51, 51, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Towhid Store");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 130));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 80));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 130));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 70));
 
-        mainView.setBackground(new java.awt.Color(51, 102, 255));
+        mainView.setBackground(new java.awt.Color(153, 204, 0));
         mainView.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAdd.setBackground(new java.awt.Color(0, 0, 0));
@@ -566,7 +574,7 @@ public class ProductView extends javax.swing.JFrame {
                 btnAddActionPerformed(evt);
             }
         });
-        mainView.add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 290, -1));
+        mainView.add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 160, -1));
 
         btnSales.setBackground(new java.awt.Color(204, 204, 0));
         btnSales.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
@@ -582,7 +590,7 @@ public class ProductView extends javax.swing.JFrame {
                 btnSalesActionPerformed(evt);
             }
         });
-        mainView.add(btnSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 120, 300, -1));
+        mainView.add(btnSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 120, 170, -1));
 
         btnStock.setBackground(new java.awt.Color(255, 0, 255));
         btnStock.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
@@ -592,7 +600,7 @@ public class ProductView extends javax.swing.JFrame {
                 btnStockMouseClicked(evt);
             }
         });
-        mainView.add(btnStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 290, -1));
+        mainView.add(btnStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 160, -1));
 
         btnReport.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         btnReport.setForeground(new java.awt.Color(51, 255, 51));
@@ -602,10 +610,11 @@ public class ProductView extends javax.swing.JFrame {
                 btnReportMouseClicked(evt);
             }
         });
-        mainView.add(btnReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 290, -1));
+        mainView.add(btnReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 160, -1));
 
-        getContentPane().add(mainView, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 290, 410));
+        getContentPane().add(mainView, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 160, 470));
 
+        add.setBackground(new java.awt.Color(204, 204, 255));
         add.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(51, 255, 255));
@@ -619,34 +628,34 @@ public class ProductView extends javax.swing.JFrame {
         add.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 90));
 
         jLabel6.setText("ID");
-        add.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 50, 30));
+        add.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 50, 30));
 
         txtId.setEditable(false);
-        add.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 210, -1));
+        add.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 210, -1));
 
         jLabel7.setText("Name");
-        add.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 50, 20));
-        add.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 210, -1));
+        add.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 50, 20));
+        add.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 210, -1));
 
         jLabel8.setText("Unit Price");
-        add.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
-        add.add(txtUnitPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 210, -1));
+        add.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        add.add(txtUnitPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 210, -1));
 
         jLabel9.setText("Quantity");
-        add.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        add.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         txtQuantity.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txtQuantityFocusLost(evt);
             }
         });
-        add.add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, 210, -1));
+        add.add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 210, -1));
 
         jLabel10.setText("Total Price");
-        add.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
+        add.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         txtTotalPrice.setEditable(false);
-        add.add(txtTotalPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 210, -1));
+        add.add(txtTotalPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 268, 210, -1));
 
         btnProductAdd.setBackground(new java.awt.Color(51, 255, 51));
         btnProductAdd.setText("Add");
@@ -684,6 +693,8 @@ public class ProductView extends javax.swing.JFrame {
         });
         add.add(btnProductReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, -1, -1));
 
+        tblProductView.setBackground(new java.awt.Color(255, 153, 255));
+        tblProductView.setForeground(new java.awt.Color(0, 0, 255));
         tblProductView.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -699,10 +710,11 @@ public class ProductView extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblProductView);
 
-        add.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 387, 710, 100));
+        add.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 710, 180));
 
         mainView2.addTab("add", add);
 
+        sales.setBackground(new java.awt.Color(0, 102, 102));
         sales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -718,30 +730,35 @@ public class ProductView extends javax.swing.JFrame {
 
         sales.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 70));
 
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setText("Name");
         sales.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel12.setText("Quantity");
-        sales.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
+        sales.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, -1, -1));
 
         txtSalesQuantity.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txtSalesQuantityFocusLost(evt);
             }
         });
-        sales.add(txtSalesQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 110, -1));
+        sales.add(txtSalesQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, 110, -1));
 
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setText("Date");
-        sales.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, -1, -1));
-        sales.add(salesDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, -1, -1));
+        sales.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, -1, -1));
+        sales.add(salesDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 120, -1));
 
         comProductName.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         sales.add(comProductName, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 110, -1));
 
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setText("Unit Price");
         sales.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
         sales.add(txtSalesUnitPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 120, -1));
 
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setText("Total Price");
         sales.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, -1, -1));
         sales.add(txtSalesTotalPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 120, -1));
@@ -753,26 +770,28 @@ public class ProductView extends javax.swing.JFrame {
                 btnSalesSaveMouseClicked(evt);
             }
         });
-        sales.add(btnSalesSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+        sales.add(btnSalesSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
 
         btnSalesEdit.setBackground(new java.awt.Color(204, 255, 51));
         btnSalesEdit.setText("Edit");
-        sales.add(btnSalesEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, -1, -1));
+        sales.add(btnSalesEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
 
         btnSalesReset.setBackground(new java.awt.Color(255, 204, 204));
         btnSalesReset.setText("Reset");
-        sales.add(btnSalesReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, -1, -1));
+        sales.add(btnSalesReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
 
         btnSalesDelete.setBackground(new java.awt.Color(255, 0, 51));
         btnSalesDelete.setText("Delete");
-        sales.add(btnSalesDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, -1, -1));
+        sales.add(btnSalesDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 270, -1, -1));
 
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel16.setText("Stock");
         sales.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
         sales.add(lblStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, 90, 20));
 
         mainView2.addTab("sales", sales);
 
+        stock.setBackground(new java.awt.Color(0, 0, 0));
         stock.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBackground(new java.awt.Color(0, 255, 204));
@@ -786,6 +805,7 @@ public class ProductView extends javax.swing.JFrame {
 
         stock.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 70));
 
+        tblStock.setBackground(new java.awt.Color(153, 255, 153));
         tblStock.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -811,6 +831,33 @@ public class ProductView extends javax.swing.JFrame {
         mainView2.addTab("report", report);
 
         getContentPane().add(mainView2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 710, 520));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, -1, -1));
+
+        jPanel6.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel17.setText("The Store");
+        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 70, 30));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel18.setText("Of");
+        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 166, 40, 30));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel19.setText("All");
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 30, 30));
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel20.setText("Electronic");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 90, 30));
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel21.setText("Product");
+        jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 60, 30));
+
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 130, 470));
+        getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 100, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -957,7 +1004,12 @@ public class ProductView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -970,8 +1022,11 @@ public class ProductView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel lblStock;
     private javax.swing.JPanel mainView;
     private javax.swing.JTabbedPane mainView2;
