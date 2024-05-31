@@ -47,11 +47,22 @@ public class LoginPage extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
             ProductView productView = new ProductView();
             productView.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(rootPane, "Wrong username or Password!!!", "massage", JOptionPane.ERROR_MESSAGE);
+
+//            if (user.equalsIgnoreCase(user) && pass.equals(pass)) {
+//            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
+//            loginClear();
+//            ProductView productView = new ProductView();
+//            productView.setVisible(true);
+//
+//        }
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Wrong username or Password!!!", "massage", JOptionPane.ERROR_MESSAGE);
+            }
+
         }
 
-    }
+    
 
     public void loginClear() {
 
@@ -77,7 +88,7 @@ public class LoginPage extends javax.swing.JFrame {
         btnLogin = new javax.swing.JButton();
         btnLoginExit = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        checkBoxLogin = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -100,12 +111,12 @@ public class LoginPage extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("User Name");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 110, 20));
-        jPanel3.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 270, 40));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 110, 20));
+        jPanel3.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 270, 40));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Password");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 90, 30));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 90, 30));
 
         btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLogin.setText("Login");
@@ -118,13 +129,21 @@ public class LoginPage extends javax.swing.JFrame {
 
         btnLoginExit.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLoginExit.setText("Exit");
+        btnLoginExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnLoginExitMouseClicked(evt);
+            }
+        });
         jPanel3.add(btnLoginExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 100, 30));
+        jPanel3.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 270, 40));
 
-        txtPassword.setText("jPasswordField1");
-        jPanel3.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 270, 40));
-
-        jPasswordField2.setText("jPasswordField2");
-        jPanel3.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 270, 40));
+        checkBoxLogin.setText("Show Password");
+        checkBoxLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBoxLoginActionPerformed(evt);
+            }
+        });
+        jPanel3.add(checkBoxLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, 20));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 360, 400));
 
@@ -143,6 +162,21 @@ public class LoginPage extends javax.swing.JFrame {
         // TODO add your handling code here:
         getLogin();
     }//GEN-LAST:event_btnLoginMouseClicked
+
+    private void btnLoginExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginExitMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnLoginExitMouseClicked
+
+    private void checkBoxLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBoxLoginActionPerformed
+        // TODO add your handling code here:
+        if (checkBoxLogin.isSelected()) {
+            txtPassword.setEchoChar((char) 0);
+        } else {
+            txtPassword.setEchoChar('*');
+
+        }
+    }//GEN-LAST:event_checkBoxLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,6 +216,7 @@ public class LoginPage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLoginExit;
+    private javax.swing.JCheckBox checkBoxLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -189,7 +224,6 @@ public class LoginPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
