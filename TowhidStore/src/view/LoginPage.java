@@ -70,6 +70,7 @@ public class LoginPage extends javax.swing.JFrame {
          else if (txtUserName.getText().equalsIgnoreCase("Towhid") && txtPassword.getText().equals("1234")) {
             JOptionPane.showMessageDialog(rootPane, "Welcome Towhid Store");
             ProductView productView = new ProductView();
+            this.setVisible(false);
             productView.setVisible(true);
         }
 
@@ -162,7 +163,7 @@ public class LoginPage extends javax.swing.JFrame {
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\GitHub\\Towhid-Store\\TowhidStore\\Login picture\\240_F_256947386_VJGb69dBUeVGRBJEV56nnan2N1hMA8CW.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("F:\\GitHub\\SwingProject\\Towhid-Store\\TowhidStore\\Login picture\\240_F_256947386_VJGb69dBUeVGRBJEV56nnan2N1hMA8CW.jpg")); // NOI18N
         jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 400));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 340, 400));
@@ -174,6 +175,8 @@ public class LoginPage extends javax.swing.JFrame {
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
         // TODO add your handling code here:
         getLogin();
+        
+        
     }//GEN-LAST:event_btnLoginMouseClicked
 
     private void btnLoginExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginExitMouseClicked
