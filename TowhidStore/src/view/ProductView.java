@@ -53,6 +53,57 @@ public class ProductView extends javax.swing.JFrame {
         });
 
     }
+    
+    
+    
+//    public void getTotalCredit(){
+//     String[] creditViewTableColumn = { "Unit Price", "Qunatity"};
+//        DefaultTableModel model = new DefaultTableModel();
+//        model.setColumnIdentifiers(creditViewTableColumn);
+//        tblReport.setModel(model);
+//        
+//        java.util.Date toDate = dateToReports.getDate();
+//        java.util.Date fromDate = dateFromReports.getDate();
+//    
+//        String sql = "select * from product where pharchesDate between ? and ?";
+//       String sql1 = "select sum(totalPrice) from product where pharchesDate between ? and ?";
+//       
+//        try {
+//            ps=db.getCon().prepareStatement(sql);
+//             ps.setDate(1, convertUtilDateToSqlDate(fromDate));
+//            ps.setDate(2, convertUtilDateToSqlDate(toDate));
+//
+//            rs = ps.executeQuery();
+//
+//            int sl = 1;
+//
+//            while (rs.next()) {
+//
+//                //int id = rs.getInt("id");
+//                String name = rs.getString("name");
+//                float unitPrice = rs.getFloat("salesUnitPrice");
+//                float quantity = rs.getFloat("salesQuantity");
+//                float totalPrice = rs.getFloat("salesTotalPrice");
+//                
+//               
+//
+//                Date salesDate = rs.getDate("salesDate");
+//
+//                model.addRow(new Object[]{sl, name, unitPrice, quantity, totalPrice, salesDate});
+//
+//                sl += 1;
+//            }
+//
+//            ps.close();
+//            rs.close();
+//            db.getCon().close();
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(ProductView.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(ProductView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    
+//    }
 
     public void getSalesReport() {
 
@@ -64,7 +115,7 @@ public class ProductView extends javax.swing.JFrame {
         java.util.Date toDate = dateToReports.getDate();
         java.util.Date fromDate = dateFromReports.getDate();
 
-        String sql = "select * from sales where salesDate between ? and ?";
+       String sql = "select * from sales where salesDate between ? and ?";
         String sql1 = "select sum(salesTotalPrice) from sales where salesDate between ? and ?";
         try {
             ps = db.getCon().prepareStatement(sql);
@@ -83,6 +134,8 @@ public class ProductView extends javax.swing.JFrame {
                 float unitPrice = rs.getFloat("salesUnitPrice");
                 float quantity = rs.getFloat("salesQuantity");
                 float totalPrice = rs.getFloat("salesTotalPrice");
+                
+               
 
                 Date salesDate = rs.getDate("salesDate");
 
