@@ -68,7 +68,7 @@ public class LoginPage extends javax.swing.JFrame {
         
         
          else if (txtUserName.getText().equalsIgnoreCase("Towhid") && txtPassword.getText().equals("1234")) {
-            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
+            JOptionPane.showMessageDialog(rootPane, "Welcome Towhid Store");
             ProductView productView = new ProductView();
             productView.setVisible(true);
         }

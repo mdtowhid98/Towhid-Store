@@ -31,6 +31,10 @@ public class ProductView extends javax.swing.JFrame {
 
     LocalDate currentDate = LocalDate.now();
     java.sql.Date sqlCurrentDate = java.sql.Date.valueOf(currentDate);
+    
+    
+    
+    
 
     /**
      * Creates new form ProductView
@@ -112,6 +116,8 @@ public class ProductView extends javax.swing.JFrame {
     }
 
     public void getGrossPorfit() {
+        
+        
 
         java.util.Date toDate = dateToReports.getDate();
         java.util.Date fromDate = dateFromReports.getDate();
@@ -990,7 +996,7 @@ public class ProductView extends javax.swing.JFrame {
 
         mainView2.addTab("sales", sales);
 
-        stock.setBackground(new java.awt.Color(204, 204, 255));
+        stock.setBackground(new java.awt.Color(204, 204, 204));
         stock.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBackground(new java.awt.Color(0, 255, 204));
