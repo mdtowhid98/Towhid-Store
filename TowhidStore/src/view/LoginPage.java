@@ -36,39 +36,52 @@ public class LoginPage extends javax.swing.JFrame {
 //        } else {
 //            JOptionPane.showMessageDialog(rootPane, "Login Unsuccesfully");
 //        }
+
+
         if (txtUserName.getText().equals("")) {
 
             JOptionPane.showMessageDialog(rootPane, "Please fill your name");
 
-        } else if (txtPassword.getText().equals("")) {
+        } 
+        
+        
+        else if (txtPassword.getText().equals("")) {
 
             JOptionPane.showMessageDialog(rootPane, "Please fill your password");
-        } else if (txtUserName.getText().contains("Towhid") && txtPassword.getText().contains("1234")) {
-            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
-            ProductView productView = new ProductView();
-            productView.setVisible(true);
-
-//            if (user.equalsIgnoreCase(user) && pass.equals(pass)) {
+        } 
+        
+        
+//        else if (txtUserName.getText().contains("Towhid") && txtPassword.getText().contains("1234")) {
+//            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
+//            ProductView productView = new ProductView();
+//            productView.setVisible(true);
+//        }
+        
+        
+//           else if (user.equalsIgnoreCase(user) && pass.equals(pass)) {
 //            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
 //            loginClear();
 //            ProductView productView = new ProductView();
 //            productView.setVisible(true);
 //
 //        }
+        
+        
+         else if (txtUserName.getText().equalsIgnoreCase("Towhid") && txtPassword.getText().equals("1234")) {
+            JOptionPane.showMessageDialog(rootPane, "Login Succesfully");
+            ProductView productView = new ProductView();
+            productView.setVisible(true);
+        }
 
-            } else {
-                JOptionPane.showMessageDialog(rootPane, "Wrong username or Password!!!", "massage", JOptionPane.ERROR_MESSAGE);
+             else {
+                JOptionPane.showMessageDialog(rootPane, "Wrong Username or Password !!!", "massage", JOptionPane.ERROR_MESSAGE);
             }
 
         }
 
     
 
-    public void loginClear() {
-
-        txtUserName.setText("");
-        txtPassword.setText("");
-    }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.

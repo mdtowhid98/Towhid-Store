@@ -154,6 +154,7 @@ public class ProductView extends javax.swing.JFrame {
             rs.close();
             
             float grossProfit=toatSalesPice-totalPharchesPrice;
+//            float grossProfit=(txtUnitPrice*txtQuantity)-(txtAddSales*txtQuantity);
             lblProfit.setText("Profit :"+grossProfit);
 
         } catch (ClassNotFoundException | SQLException ex) {
@@ -790,7 +791,7 @@ public class ProductView extends javax.swing.JFrame {
                 btnSalesActionPerformed(evt);
             }
         });
-        mainView.add(btnSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 120, 160, -1));
+        mainView.add(btnSales, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 160, -1));
 
         btnStock.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         btnStock.setText("Stock");
