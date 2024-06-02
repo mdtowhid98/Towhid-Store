@@ -40,6 +40,7 @@ public class ProductView extends javax.swing.JFrame {
         initComponents();
         showProductOnTable();
         showStockOnTable();
+        showSalesTable();
 
         comProductName.addItemListener(new ItemListener() {
             @Override
