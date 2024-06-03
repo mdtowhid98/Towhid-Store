@@ -93,43 +93,65 @@ public class LoginPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        txtUserName = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        txtPassword = new javax.swing.JPasswordField();
-        btnExit = new javax.swing.JButton();
-        btnLogin = new javax.swing.JButton();
-        checkBoxLogin = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        txtUserName = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtPassword = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
+        checkBoxLogin = new javax.swing.JCheckBox();
+        btnLogin = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(650, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Login Application");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 400, 50));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Towhid Store");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 280, 30));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Of");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 90, 20));
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 190, 40));
+
         jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("UserName");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 120, 30));
-        getContentPane().add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 310, 40));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, 120, 30));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 190, 40));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Password");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 90, 30));
-        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 310, 40));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 90, 30));
 
-        btnExit.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
-        btnExit.setText("Exit");
-        btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnExitMouseClicked(evt);
+        checkBoxLogin.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        checkBoxLogin.setForeground(new java.awt.Color(255, 255, 255));
+        checkBoxLogin.setText("Show password");
+        checkBoxLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkBoxLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 90, 30));
+        jPanel1.add(checkBoxLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
 
         btnLogin.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         btnLogin.setText("Login");
@@ -138,33 +160,23 @@ public class LoginPage extends javax.swing.JFrame {
                 btnLoginMouseClicked(evt);
             }
         });
-        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, 110, 30));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 110, 30));
 
-        checkBoxLogin.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        checkBoxLogin.setText("Show password");
-        checkBoxLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkBoxLoginActionPerformed(evt);
+        btnExit.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        btnExit.setText("Exit");
+        btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnExitMouseClicked(evt);
             }
         });
-        getContentPane().add(checkBoxLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 90, 30));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Login Application");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 400, 50));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Towhid Store");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 280, 30));
+        jLabel7.setIcon(new javax.swing.ImageIcon("D:\\GitHub\\Towhid-Store\\TowhidStore\\Login picture\\240_F_256947386_VJGb69dBUeVGRBJEV56nnan2N1hMA8CW.jpg")); // NOI18N
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 300));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
-        jLabel5.setText("Of");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 90, 20));
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 520));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 330, 300));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 520));
 
@@ -239,6 +251,7 @@ public class LoginPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables
