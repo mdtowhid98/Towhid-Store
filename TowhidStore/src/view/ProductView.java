@@ -743,6 +743,7 @@ public class ProductView extends javax.swing.JFrame {
         btnSales = new javax.swing.JButton();
         btnStock = new javax.swing.JButton();
         btnReport = new javax.swing.JButton();
+        btnExitHome = new javax.swing.JButton();
         mainView2 = new javax.swing.JTabbedPane();
         add = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -881,6 +882,21 @@ public class ProductView extends javax.swing.JFrame {
             }
         });
         mainView.add(btnReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 160, -1));
+
+        btnExitHome.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnExitHome.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Downloads\\switch.png")); // NOI18N
+        btnExitHome.setText("Exit");
+        btnExitHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnExitHomeMouseClicked(evt);
+            }
+        });
+        btnExitHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitHomeActionPerformed(evt);
+            }
+        });
+        mainView.add(btnExitHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 160, 40));
 
         getContentPane().add(mainView, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 160, 470));
 
@@ -1326,6 +1342,15 @@ public class ProductView extends javax.swing.JFrame {
         resetRepot();
     }//GEN-LAST:event_btnReportResetMouseClicked
 
+    private void btnExitHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitHomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitHomeActionPerformed
+
+    private void btnExitHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitHomeMouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnExitHomeMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1364,6 +1389,7 @@ public class ProductView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel add;
     private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnExitHome;
     private javax.swing.JButton btnProductAdd;
     private javax.swing.JButton btnProductDelete;
     private javax.swing.JButton btnProductEdit;
