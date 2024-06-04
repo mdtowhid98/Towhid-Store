@@ -144,7 +144,6 @@ public class LoginPage extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 90, 30));
 
         checkBoxLogin.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        checkBoxLogin.setForeground(new java.awt.Color(255, 255, 255));
         checkBoxLogin.setText("Show password");
         checkBoxLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -157,7 +157,7 @@
               <Font name="Segoe UI" size="18" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Administrator\Downloads\switch.png"/>
+              <Image iconType="2" name="D:\GitHub\Towhid-Store\TowhidStore\Login picture\Extras-Shutdown-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
@@ -167,7 +167,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="430" width="160" height="40"/>
+              <AbsoluteConstraints x="0" y="410" width="160" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
