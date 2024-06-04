@@ -172,7 +172,7 @@ public class LoginPage extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("D:\\GitHub\\Towhid-Store\\TowhidStore\\Login picture\\240_F_256947386_VJGb69dBUeVGRBJEV56nnan2N1hMA8CW.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("F:\\GitHub\\SwingProject\\Towhid-Store\\TowhidStore\\Login picture\\240_F_256947386_VJGb69dBUeVGRBJEV56nnan2N1hMA8CW.jpg")); // NOI18N
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 300));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 330, 300));

@@ -884,7 +884,7 @@ public class ProductView extends javax.swing.JFrame {
         mainView.add(btnReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 160, -1));
 
         btnExitHome.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnExitHome.setIcon(new javax.swing.ImageIcon("D:\\GitHub\\Towhid-Store\\TowhidStore\\Login picture\\Extras-Shutdown-icon.png")); // NOI18N
+        btnExitHome.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Downloads\\switch.png")); // NOI18N
         btnExitHome.setText("Exit");
         btnExitHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -896,7 +896,7 @@ public class ProductView extends javax.swing.JFrame {
                 btnExitHomeActionPerformed(evt);
             }
         });
-        mainView.add(btnExitHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 160, 60));
+        mainView.add(btnExitHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 431, 160, -1));
 
         getContentPane().add(mainView, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 160, 470));
 
